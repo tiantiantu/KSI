@@ -114,7 +114,7 @@ class CAML(nn.Module):
         thisembeddings=thisembeddings.transpose(1,2)
         
         
-        thisembeddings=self.tanh(self.convs1(thisembeddings).transpose(1,2))  ###use tanh, not relu!!! important
+        thisembeddings=self.tanh(self.convs1(thisembeddings).transpose(1,2))  
         
         alpha=self.H.weight.matmul(thisembeddings.transpose(1,2))
         alpha=F.softmax(alpha, dim=2)
