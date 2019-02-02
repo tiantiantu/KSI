@@ -2,7 +2,7 @@ import codecs
 from collections import defaultdict
 import csv
 import string
-from stop_words import get_stop_words
+from stop_words import get_stop_words    # download stop words package from https://pypi.org/project/stop-words/
 import numpy as np
 
 
